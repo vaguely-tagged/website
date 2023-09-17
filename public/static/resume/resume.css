@@ -1,0 +1,55 @@
+
+body{
+    animation: fade-in 2s ease-in-out;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.header{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+@media(max-width: 850px){
+    .header{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
+
+.headerUl{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+}
+
+.headerButton{
+    border: 1px solid black;
+    background: transparent;
+    height: 3rem;
+    width: 11rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: black;
+}
+
+.headerNav{
+    display: grid;
+}
+
+  custom-grid {
+            display:  grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        @media(max-width: 850px){
+            custom-grid{
+                grid-template-columns: none;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+        }

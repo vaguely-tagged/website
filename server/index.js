@@ -18,8 +18,17 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(rootDir, "landing", "landing.html"))
 })
 
+app.get('/blog', (req, res) => {
+  res.sendFile(path.join(rootDir, "blog", "blog.html"))
+})
+
+app.get('/resume', (req, res) => {
+  res.sendFile(path.join(rootDir, "resume", "resume.html"))
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
 
 // https.createServer(options, app).listen(443);
