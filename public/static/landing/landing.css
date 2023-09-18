@@ -3,10 +3,10 @@ header{
     display: flex;
 }
 
-body {
+/*html {
     animation: fade-in 2s ease-in-out;
 }   
-
+*/
 line-item {
     width: 3rem;
     background-color: black;

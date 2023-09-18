@@ -1,0 +1,92 @@
+html, body{
+    padding: 0.5rem;
+}
+
+body{
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.header{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+@media(max-width: 850px){
+    .header{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
+
+.headerUl{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+}
+
+.headerButton{
+    border: 1px solid black;
+    background: transparent;
+    height: 3rem;
+    width: 11rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: black;
+}
+
+.headerNav{
+    display: grid;
+}
+
+.mainGrid {
+    display: grid;
+    justify-items: center;
+    margin-top: 3%;
+}
+
+article-card {
+    width: 90vw;
+    height: 30vh;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    display: grid;
+    justify-items: center;
+    background-image: url("/images/article/sep17/card.jpg");
+    background-size: cover;
+    color: white;
+}
+
+article-card > h3 {
+    margin-top: 1rem;
+}
+
+.cardButton {
+    border: 1px solid white;
+    background: transparent;
+    height: 3rem;
+    width: 11rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Why vanilla javascript and html matters">
+    <meta name="keywords" content="vincents, vincent, sgherzi, vincent sgherzi, vanilla, defense of vanilla, in defense of vanilla, frameworks, react">
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
+    <link rel="stylesheet" href="/global/global.css">
+    <link rel="stylesheet" href="/blog/articles/sep17/sep17.css">
+	<title>In Defense of Vanilla</title>
+</head>
+<body>
+  <header class="header">
+        <h1 class="title">SEP17.</h1>
+
+        <nav class="headerNav">
+            <ul class="headerUl">
+                <li>
+                    <form action="/">
+                        <button class="headerButton">Home.</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="https://github.com/vaguely-tagged">
+                        <button class="headerButton">Github.</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <section>
+
+    	<img src="/images/article/sep17/icecream.jpg" alt="vanilla ice cream cone">
+
+    	<h2>In Defense of Vanilla</h2>
+
+    	<p>
+    		As a recent college graduate who’s fortunate enough to join the software development workforce, I’ve discovered the pain of modern web development. At first, I loved the freshness of ideas with React (or now mostly Nextjs) or the current favorite child of the community, HTMLX, but quickly got overwhelmed and confused with options, opinions, and best practices. I want to make it clear that more options are not inherently a bad thing. Developer choice is good and helps us prevent one language or company from taking over and implementing controversial policies (looking at you rust). My gripe with modern web development is its endurance. Picture a simple blog such as this website, what does the user need for a good experience? Access to easily accessible content promptly without interruptions or violations of social contracts. This is accomplished by delivering text and images over the wire via my technology of choice. Issues arise when people solve this problem by immediately going to grab frameworks like Next or Angular. Do you need a framework for this? Websites have existed for many years and will continue to exist for many years after whatever hot weekly technology comes out. It’s my personal belief that most frameworks are adding unnecessary bloat and complexity to websites increasing their fragility and even hurting the environment.
+    	</p>
+
+    	<p>
+    		Let’s use an example in the wild: SPACE JAM. This infamous website has been standing the same since 1996, over 27 years with minor modifications pre-react, pre-angular, pre-vue. Most modern websites shove a giant javascript bundle riddled with random analytic or ad scripts just to display a similar combo of text and media. Now finally being able to work in a professional capacity on both (mostly) vanilla and framework-heavy projects I can confidently say that vanilla projects are much easier to maintain. React projects from a handful of years ago require different tooling to get off the ground, and use completely different best practices to create props and state (looking at you react hooks). 
+    	</p>
+
+    	<p>
+    		Contrary to what you were told as a kid, the internet does forget and forgets often. Content posted to the Internet might not be there forever and, as time progresses, we are seeing much of it disappear. Fortunately, much of it is being preserved by the Internet Archive, but is a single company to hold all the historical data really the best answer? Google Chrome’s large market share and recent news on the web integrity environment proves otherwise. I strongly believe in the Internet Archive and donate to keep the project alive, but without a culture shift, we will ultimately lose large portions of the Internet. The Internet Archive is currently involved in legal battles and will continue to be a target, likely for the rest of its life. Not to mention the cost of operation with electricity getting more expensive and storage costs not decreasing at the same rates before with no new fancy encoding to help bring space down. 
+    	</p>
+
+    	<p>
+    		Modern javascript, HTML, and CSS have implemented many quality-of-life features that developers (myself included) don’t know exist or don’t use. The picture tag is a great example, providing multiple image sources for fallbacks, or the data picker on the input tag, which provides a native way to enter a date into a website using the browser's (or your OS’) native UI. Despite this npm remains riddled with 3rd party components that do the same reinventing the wheel over and over. 
+    	</p>
+
+    	<p>
+    		This post does not exist only to dump on frameworks. Frameworks CAN be useful, especially in large teams where it can become easy to accidentally thrash the DOM tree. Frameworks can provide extra layers of sanitation from user input and often handle edge cases that could be tricky to handle in vanilla. However, most of the time frameworks get used for the developer experience. Many certificate mills teach students to use React or Angular from the beginning whilst they have no prior knowledge of coding. This makes sense since the main goal of many of these code camps is for its participants to find a job as quickly as possible. As nice as it is, no one is hiring to code a project in vanilla JavaScript and HTML. By only learning the abstraction we rob new developers of truly understanding what they are writing and why the abstraction exists in the first place. 
+
+    		To new devs, learn the basics. Frameworks may change but at the end of the day, everything must go back to html, css, and javascript.
+
+			To old devs, we must consider the longevity of our websites and our information. Humans forget, and as we maintain the library of the world we must keep it alive.
+    	</p>
+    </section>
+
+    <footer>© Vincent Sgherzi 2023</footer>
+</body>
+</html>

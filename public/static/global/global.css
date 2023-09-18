@@ -2,6 +2,7 @@
     font-family: "namun" ;
     src: url(./Nanum_Myeongjo/NanumMyeongjo-Regular.ttf);
     font-weight: normal;
+    unicode-range: U+000-5FF;
 }
 
 @keyframes fade-in {
@@ -24,5 +25,5 @@
 * {
 	padding: 0;
 	margin: 0;
-    font-family: "namun", Fallback, 'Times New Roman', Times, serif; 
+    font-family: "namun", Fallback, 'Times New Roman', Times, serif;
 }

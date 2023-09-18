@@ -26,6 +26,10 @@ app.get('/resume', (req, res) => {
   res.sendFile(path.join(rootDir, "resume", "resume.html"))
 })
 
+app.get('/sep17', (req, res) => {
+  res.sendFile(path.join(path.join(rootDir, "articles"), "sep17", "sep17.html"))
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
