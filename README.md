@@ -1,2 +1,3 @@
-# website
-Web repo for vincents.dev
+# vincents.dev
+
+Web repo and tooling for the vincents.dev site
