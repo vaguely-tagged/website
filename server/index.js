@@ -7,10 +7,10 @@ const app = express()
 const port = 3000
 const rootDir = path.join(__dirname, "../public/html");
 
-// const options = {
-//   key: fs.readFileSync("./privkey.pem"),
-//   cert: fs.readFileSync("./fullchain.pem")
-// };
+const options = {
+  key: fs.readFileSync("./privkey.pem"),
+  cert: fs.readFileSync("./fullchain.pem")
+};
 
 app.use(express.static('../public/static')) 
 
@@ -30,9 +30,9 @@ app.get('/sep17', (req, res) => {
   res.sendFile(path.join(path.join(rootDir, "articles"), "sep17", "sep17.html"))
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
 
 
-// https.createServer(options, app).listen(443);
+https.createServer(options, app).listen(443);
